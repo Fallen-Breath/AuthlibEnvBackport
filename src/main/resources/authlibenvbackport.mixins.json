@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.fallenbreath.authlibenvbackport.mixins",
+  "compatibilityLevel": "{{COMPATIBILITY_LEVEL}}",
+  "mixins": [
+    "account.YggdrasilGameProfileRepositoryMixin",
+    "auth.YggdrasilUserAuthenticationMixin",
+    "session.YggdrasilMinecraftSessionServiceMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

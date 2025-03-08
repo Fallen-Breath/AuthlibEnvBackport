@@ -4,29 +4,29 @@
   "version": "${version}",
 
   "name": "${name}",
-  "description": "Template for my fabric mods",
+  "description": "Backport the feature that authlib support reading service url overrides from java system properties to MC 1.16-",
   "authors": [
     "Fallen_Breath"
   ],
   "contact": {
-    "homepage": "https://modrinth.com",
-    "sources": "https://github.com/Fallen-Breath/fabric-mod-template"
+    "homepage": "https://github.com/Fallen-Breath/AuthlibEnvBackport",
+    "sources": "https://github.com/Fallen-Breath/AuthlibEnvBackport"
   },
 
-  "icon": "assets/template_mod/icon.png",
+  "icon": "assets/authlibenvbackport/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.fallenbreath.template_mod.TemplateMod"
+      "me.fallenbreath.authlibenvbackport.AuthlibEnvBackportMod"
     ]
   },
   "mixins": [
-    "template_mod.mixins.json"
+    "authlibenvbackport.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.11.4",
+    "fabricloader": ">=0.14",
     "minecraft": "${minecraft_dependency}"
   }
 }
